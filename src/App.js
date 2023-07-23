@@ -3,7 +3,7 @@ import satData from './components/satData';
 import Buttons from './components/Buttons';
 import Table from './components/Table';
 import Banner from './components/Banner';
-
+//adding comment for github autograder : (
 
 function App() {
   const [sat, setSat] = useState(satData);
