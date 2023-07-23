@@ -10,12 +10,18 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Row Data TBD</td>
-        </tr>
+          {sat.map((id, data) => {
+            return (
+            <tr key={id}>
+              <td>{data.name}</td>
+              <td>{data.type}</td>
+              <td>{data.launchDate}</td>
+              <td>{data.operational ? "Active" : "Inactive"}</td>
+            </tr>
+            )}
+          )}
         </tbody>
-      </table>
+        </table>
   );
 };
-
 export default Table;
